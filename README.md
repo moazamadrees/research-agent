@@ -1,5 +1,8 @@
 # ResearchAgent
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)
+
 A multi-agent AI system that takes a complex research question, automatically breaks it into subtasks, retrieves relevant information from documents using RAG, synthesizes the findings, and returns a structured report with confidence scoring and human-review flagging.
 
 ## Architecture
