@@ -60,7 +60,7 @@ class TestResearchEndpoint:
             confidence_score=0.82,
             review_status=ReviewStatus.AUTO_APPROVED,
             review_reason=None,
-            model_used="claude-3-5-sonnet-20241022",
+            model_used="claude-sonnet-4-5-20250929",
         )
 
     def test_research_returns_report(self, client):

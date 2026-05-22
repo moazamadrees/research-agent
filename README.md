@@ -131,7 +131,7 @@ curl -X POST "http://localhost:8000/ingest/directory?directory=./documents"
 System health check with document count.
 
 ```json
-{"status": "ok", "chroma_documents": 1247, "model": "claude-3-5-sonnet-20241022"}
+{"status": "ok", "chroma_documents": 1247, "model": "claude-sonnet-4-5-20250929"}
 ```
 
 ---
@@ -177,7 +177,7 @@ All settings are configurable via `.env`:
 
 ```env
 ANTHROPIC_API_KEY=sk-ant-...
-LLM_MODEL=claude-3-5-sonnet-20241022
+LLM_MODEL=claude-sonnet-4-5-20250929
 CONFIDENCE_THRESHOLD=0.65
 MAX_RETRIEVAL_DOCS=5
 CHUNK_SIZE=800

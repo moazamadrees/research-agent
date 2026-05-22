@@ -8,7 +8,7 @@ services:
       - "8000:8000"
     environment:
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
-      - LLM_MODEL=${LLM_MODEL:-claude-3-5-sonnet-20241022}
+      - LLM_MODEL=${LLM_MODEL:-claude-sonnet-4-5-20250929}
       - CHROMA_PERSIST_DIR=/app/chroma_db
       - CHROMA_COLLECTION_NAME=${CHROMA_COLLECTION_NAME:-research_papers}
       - CONFIDENCE_THRESHOLD=${CONFIDENCE_THRESHOLD:-0.65}

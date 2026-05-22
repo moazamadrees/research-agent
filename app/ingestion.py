@@ -7,7 +7,7 @@ from typing import Optional
 import chromadb
 from chromadb.utils import embedding_functions
 import pdfplumber
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from app.config import get_settings
 
