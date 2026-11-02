@@ -51,7 +51,7 @@ Confidence < threshold?
 ### 2. Clone & Configure
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/moazamadrees/research-agent.git
 cd research-agent
 cp .env.example .env
 # Edit .env and set your ANTHROPIC_API_KEY
@@ -75,8 +75,11 @@ Interactive docs: `http://localhost:8000/docs`
 
 ```bash
 python -m venv venv
-# Windows:
-venv\Scripts\activate
+
+# Windows PowerShell:
+.\venv\Scripts\Activate.ps1
+# Windows Command Prompt:
+venv\Scripts\activate.bat
 # macOS/Linux:
 source venv/bin/activate
 
@@ -152,6 +155,8 @@ The confidence score blends three signals:
 **Threshold:** `CONFIDENCE_THRESHOLD=0.65` (configurable via `.env`)
 
 When confidence < threshold → `review_status: flagged_for_review` with a `review_reason` explaining why.
+
+The score is a heuristic combining model self-assessment, retrieval similarity and evidence coverage. It is not a calibrated probability that the answer is correct, so important outputs still need human review.
 
 ---
 
